@@ -1,1 +1,1 @@
-#Allgemeinwissen QUiz
+Allgemeinwissen QUiz
