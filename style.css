@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #136080, #0e6830, #136080);
+    background-size: 400% 400%;
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: backgroundflow 10s linear infinite;
+}
+
+body:before {
+    opacity: 0.3;
+    filter: blur(60px);
+}
+
+@keyframes backgroundflow {
+    0% { background-position: 0% 50% }
+    100% { background-position: 100% 50% }
+}
+
+.quiz-container {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 156, 0.4);
+}
+
+.gradient-text {
+    background: linear-gradient(270deg, #38bdf8, #22c55e);
+    background-size: 300%;
+    animation: flow 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes flow {
+    0% { background-position: 0% }
+    100% { background-position: 300% }
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #22c55e;
+    color: #052e16;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 255, 156, 0.4);
+}
+
+.answer {
+    background: #334155;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.answer:hover {
+    background: #475569;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 255, 156, 0.4);
+}
+
+.correct {
+    background: #16a34a !important;
+}
+
+.wrong {
+    background: #dc2626 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+#toGithub {
+    position: fixed;
+    top: 1px;
+    right: 20px;
+    border-radius: 12px;
+    background: #1e293b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#toGithub:before {
+    content: "";
+    position: absolute;
+    inset: -100%;
+    /*background: linear-gradient(0deg, #ec4899, #3b82f6);*/
+    background: linear-gradient(0deg, #38bdf8, #22c55e, #38bdf8);
+    background-size: 300%;
+    animation: spin 3s linear infinite;
+    z-index: 0;
+}
+
+#toGithub:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 255, 156, 0.4);
+}
+
+#toGithub span {
+    position: relative;
+    z-index: 999;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
