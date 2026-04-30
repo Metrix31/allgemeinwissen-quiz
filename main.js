@@ -11,7 +11,7 @@ const quizData = [
     },
     {
         question: "Welches Element hat das chemische Symbol O?",
-        answers: ["Gold", "Sauerstoff", "Ozon", "Osmium"],
+        answers: ["Gold", "Sauerstoff", "Silber", "Osmium"],
         correct: 1
     },
     {
@@ -23,6 +23,31 @@ const quizData = [
         question: "Welches Tier ist das schnellste Landtier?",
         answers: ["Löwe", "Gepard", "Antilope", "Leopard"],
         correct: 1
+    },
+    {
+        question: "Was ist das kleinste Land der Welt?",
+        answers: ["Monaco", "San Marino", "Liechtenstein", "Vatikanstadt"],
+        correct: 3
+    },
+    {
+        question: "Wie viele Zähne hat ein erwachsener Mensch normalerweise",
+        answers: ["28", "30", "32", "34"],
+        correct: 2
+    },
+    {
+        question: "Welcher Planet in unserem Sonnensystem hat die meisten Monde?",
+        answers: ["Jupiter", "Saturn", "Uranus", "Neptun"],
+        correct: 1
+    },
+    {
+        question: "Welches Gas ist am meisten in der Erdatmosphäre?",
+        answers: ["Sauerstoff", "Kohlenstoffdioxid", "Argon", "Stickstoff"],
+        correct: 3
+    },
+    {
+        question: "Was ist das größte Organ des menschlichen Körpers?",
+        answers: ["Haut", "Herz", "Lunge", "Leber"],
+        correct: 0
     }
 ];
 
